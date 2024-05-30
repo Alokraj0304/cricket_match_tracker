@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cricket match tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        
+        <!-- box1 -->
+        <div class="cricgyan">
+            <img src="cricgyan logo.png" alt="" class="logo">
+        </div>
+        <a href=""><p>Live Scores</p></a>
+        <a href=""> <p>Schedule</p></a>
+        <a href=""><p>archives</p></a>
+        <a href=""><p>news</p></a>
+        <a href=""><p>series</p></a>
+        <a href=""><p>teams</p></a>
+        <a href=""><p>videos</p></a>
+        <a href=""><p>rankings</p></a>
+        <a href=""><p>more</p></a>
+        <div class="input">
+            <input class="search" type="text" placeholder="search here">
+            <button class="button">search</button>
+        </div>
+    </div>
+    <div class="navbar2">
+        <div class="matches">MATCHES</div>
+        <div class="one">ENG vs Pak</div>
+        <div class="two">SCO vs UGA</div>
+        <div class="three">NEP vs USA</div>
+        <div class="four">WI vs AUS</div>
+        <div class="five">SRH vs KKR</div>
+        <div></div>
+
+    </div>
+    <div class="content"></div>
+
+    
+</body>
+</html>
