@@ -29,16 +29,26 @@
         </div>
     </div>
     <div class="navbar2">
-        <div class="matches">MATCHES</div>
-        <div class="one">ENG vs Pak</div>
-        <div class="two">SCO vs UGA</div>
-        <div class="three">NEP vs USA</div>
-        <div class="four">WI vs AUS</div>
-        <div class="five">SRH vs KKR</div>
-        <div></div>
+        
+        <a class="matches" href=""><p>MATCHES</p></a>
+      
+        <a href="" class="one">ENG vs Pak</a>
+        <a href="" class="two">SCO vs UGA</a>
+        <a href="" class="three">NEP vs USA</a>
+        <a href="" class="four">WI vs AUS</a>
+        <a href="" class="five">SRH vs KKR</a>
+        
 
     </div>
-    <div class="content"></div>
+    <div class="box11">
+        <div class="content">
+            <div class="box13">box13</div>
+            <div class="box14">box14</div>
+            <div class="box15">box15</div>
+            <div class="box16">box16</div>
+        </div>
+    </div>
+    <div class="footer">For More Information <a class="click" href="">click here</a></div>
 
     
 </body>
