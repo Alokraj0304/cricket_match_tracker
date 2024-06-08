@@ -3,6 +3,8 @@
     font-family: Arial, Helvetica, sans-serif;
     border: border-box;
 }
+
+
 .list{
     display: flex;
     width: 65vw;
@@ -240,14 +242,24 @@ a:hover{
 }
 .content{
     display: flex;
-    background-color: rgba(221, 221, 221, 0.64);
+    background-color: rgba(221, 221, 221, 0.495); 
     height: 120vh;
     width: 50vw;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     z-index: -1;
-
+    backdrop-filter: blur(5px);
+}
+.bgimg{
+    position: fixed;
+    height: 950px;
+    width:1480px;
+    z-index: -1;
+    background:url('cricket\ ground.jpg') ;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    
 }
 .box13{
     height: 10rem;
@@ -323,6 +335,7 @@ a:hover{
     display: none;
 }
 @media (max-width:450px){
+    
     .navbar{
         /* display: flex; */
         width: 147vw;
@@ -384,6 +397,7 @@ a:hover{
         
 
     }
+    
     #check2:checked ~ .navbar2 {right: 0;}
     .bar{
         display:inline-block;
@@ -425,6 +439,9 @@ a:hover{
         font-size: 20px;
         background-color: #006f55b0;
     }
+    .bgimg{
+        display: none;
+    }
     .box11{
         
         width: 147vw;
@@ -435,12 +452,13 @@ a:hover{
     }
     .content{
         width: 150vw;
-        height: 170vh;
+        height: 150vh;
         background-color: #4a4a4a;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        margin-top: 280px;
     }
     .box13{
         height: 200px;
