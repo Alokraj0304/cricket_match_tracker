@@ -40,6 +40,22 @@
     transition: all;
     transition-duration: 0.3s;
 }
+.signinn{
+    color:#fffa6fdb;
+    height: 30px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all;
+    border-radius: 10px;
+    transition-duration: 0.1s;
+}
+.signinn:hover{
+    background-color: #006f55;
+    border: 1.8px solid #004434;
+    
+}
 .contacts:hover{
     background-color: #006f55;
     text-decoration:underline;
@@ -575,7 +591,7 @@ a:hover{
     }
     
     
-    
+
     
     /* #check:checked ~ .navbar2 {right: 0;} */
     /* @media(max-width: 610px){
