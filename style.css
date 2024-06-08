@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -19,7 +18,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
+/* .aboutus::after{
+    content: "";
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: aliceblue;
+    transition: 0.15s ease-in-out;
+} */
 .contacts{
     color:#fffa6fdb;
     height: 60px;
@@ -29,7 +39,6 @@
     justify-content: center;
     transition: all;
     transition-duration: 0.3s;
-    float: left;
 }
 .contacts:hover{
     background-color: #006f55;
@@ -38,8 +47,7 @@
 }
 .aboutus:hover{
     background-color: #006f55;
-    
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 .navbar{
@@ -50,6 +58,8 @@
     align-items: center;
     justify-content: space-between;
     width: 100vw;
+    position: fixed;
+
     
 }
 .cricgyan{
@@ -131,7 +141,12 @@ a:hover{
     color: white;
     align-items: center;
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.773);
-    width: 100vw;
+    width: 89.9vw;
+    list-style-type: none;
+    padding-left: 150px;
+    position: fixed;
+    top: 60px;
+    z-index: 0;
     
     
 }
@@ -142,7 +157,10 @@ a:hover{
     width: 100px;
     align-items: center;
     justify-content: center;
-    
+    position: fixed;
+    left: 0px;
+    top: 60px; 
+    z-index: 10; 
 }
 .matches:hover{
     background-color: #272727;
@@ -191,6 +209,9 @@ a:hover{
 .five{
     margin-right: 50px;
 }
+.more{
+    display: none;
+}
 .box11{
     /* background-color: #009270; */
     
@@ -204,7 +225,7 @@ a:hover{
 .content{
     display: flex;
     background-color: rgba(221, 221, 221, 0.64);
-    height: 90vh;
+    height: 120vh;
     width: 50vw;
     align-items: center;
     justify-content: center;
@@ -218,18 +239,24 @@ a:hover{
     width: 20rem;
     border: 1.5px solid black;
     margin-right: 20px;
+    border-radius: 10px;
+    padding: 10px;
 }
 .box14{
     height: 10rem;
     background-color: antiquewhite;
     width: 20rem;
     border: 1.5px solid black;
+    border-radius: 10px;
+    padding: 10px;
 }
 .box15{
     height: 10rem;
     background-color: antiquewhite;
     width: 20rem;
     margin-right: 20px;
+    border-radius: 10px;
+    padding: 10px;
     border: 1.5px solid black;
 }
 .box16{
@@ -237,6 +264,9 @@ a:hover{
     background-color: antiquewhite;
     width: 20rem;
     border: 1.5px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    
 }
 .footer{
     width: 100vw;
@@ -248,6 +278,7 @@ a:hover{
     display: flex;
     justify-content: center;
     padding-top: 7px;
+    
 }
 .click{
     font-size: 16px;
@@ -260,19 +291,22 @@ a:hover{
     font-size: 16px;
     color: rgb(168, 255, 162);
 }
-#bar {
+.bar {
+    display: none;
+}
+#check{
     display: none;
 }
 .new{
     display: none;
 }
-#cross{
+.cross{
     display: none;
 }
 #signin{
     display: none;
 }
-@media (max-width:600px){
+@media (max-width:450px){
     .navbar{
         /* display: flex; */
         width: 147vw;
@@ -281,26 +315,76 @@ a:hover{
         justify-content: center;
         justify-content: space-between; */
         position: fixed;
+        z-index: 100;
     }
     .list{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+        font-size: 25px;
+        width: 60%;
+        height: 100vh;
+        position: fixed;
+        top:0;
+        left: -100%;
+        z-index: 0;
+        background-color:#009270;
+        transition: all 0.4s ease-in-out;
+        padding-top: 120px;
+    }
+    .aboutus{
+        width: 250px;
+    }
+    .bar , .cross {display: block;}
+    #check:checked ~ .list {left: 0;}
+    #check{
         display: none;
     }
     .input{
         display: none;
     }
+    
     .navbar2{
         width: 147vw;
         position: fixed;
         top: 100px;
+        z-index: 0;
+        box-shadow: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+        font-size: 25px;
+        width: 70%;
+        height: 88vh;
+        position: fixed;
+        top:110px;
+        right: -100%;
+        background-color:#333333;
+        transition: all 0.4s ease-in-out;
+        padding-top: 120px;
+        padding-left: 0;
         
 
     }
-    #bar{
+    #check2:checked ~ .navbar2 {right: 0;}
+    .bar{
         display:inline-block;
         position: fixed;
         left: 20px;
         font-size: 25px;
+        z-index: 100;
+        cursor: pointer;
+        
     }
+    /* .cross{
+        display:inline-block;
+        position: fixed;
+        left: 20px;
+        font-size: 25px;
+        top: 43px;
+    } */
     .logo{
         margin-left: 45vw;
         padding-left: 15px;
@@ -308,7 +392,7 @@ a:hover{
         height: 250px;
         position: fixed;
         bottom: 1160px;
-
+        z-index: 10;
         
 
     }
@@ -371,6 +455,7 @@ a:hover{
         left: 330px;
         
     }
+    
     .box16{
         
         height: 200px;
@@ -381,45 +466,53 @@ a:hover{
         border-radius: 10px;
         padding: 6px;
     }
+    .new{
+        display: block;
+    }
     .box17{
         display: inline-block;
         height: 200px;
         width: 200px;
-        
+        position: absolute;
+        top: 660px;
+        left: 70px;
         border-radius: 10px;
         padding: 6px;
-        background-color: #006f55;
-        color: white;
+        background-color: #fafffe;
+        color: rgb(0, 0, 0);
     }
     .box18{
         display: inline-block;
         height: 200px;
         width: 200px;
         position: absolute;
-        top: 420px;
-        left: 70px;
+        top: 660px;
+        left: 330px;
         border-radius: 10px;
         padding: 6px;
+        background-color: #fafffe;
     }
     .box19{
         display: inline-block;
         height: 200px;
         width: 200px;
         position: absolute;
-        top: 420px;
+        top: 900px;
         left: 70px;
         border-radius: 10px;
         padding: 6px;
+        background-color: #fafffe;
     }
     .box20{
         display: inline-block;
         height: 200px;
         width: 200px;
         position: absolute;
-        top: 420px;
-        left: 70px;
+        top: 900px;
+        left: 330px;
         border-radius: 10px;
         padding: 6px;
+        background-color: #fafffe;
     }
     .footer {
         width: 147vw;
@@ -429,4 +522,79 @@ a:hover{
         align-items: center;
         padding-bottom: 30px;
     }
+    .matches{
+        display: flex;
+        background-color: #1a1a1a;
+        height: 40px;
+        width: 100px;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        left: 0px;
+        top: 109px;
+        z-index: 100; 
+        font-size: 19px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .more{
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline-block;
+        background-color: #1a1a1a;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor:pointer;
+        font-size: 19px;
+        position: fixed;
+        top: 109px;
+        left: 503px;
+        text-transform: uppercase;
+        z-index: 10;
+        height: 40px;
+        width: 100px;
+    }
+    .below{
+        background-color: #333333;
+        position: fixed;
+        top: 109px;
+        left: 87px;
+        height: 40px;
+        width: 110vw;
+        z-index:100;
+    }
+    
+    
+    .aboutus{
+        width: 250px;
+    }
+    .bar , .cross {display: block;}
+    #check:checked ~ .list {left: 0;}
+    #check{
+        display: none;
+    }
+    
+    
+    
+    
+    /* #check:checked ~ .navbar2 {right: 0;} */
+    /* @media(max-width: 610px){
+        .menu {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            z-index: 100;
+            background-color: var(--color2);
+            transition: all 0.2s ease-in-out;
+        }
+        .menu li {margin-top: 40px;}
+        .menu li a {padding: 10px;}
+        .open-menu , .close-menu {display: block;}
+        #check:checked ~ .menu {right: 0;}
+    } */
 }
