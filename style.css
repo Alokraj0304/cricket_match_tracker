@@ -254,7 +254,7 @@ a:hover{
 .bgimg{
     position: fixed;
     height: 950px;
-    width:1480px;
+    width:1500px;
     z-index: -1;
     background:url('cricket\ ground.jpg') ;
     background-size: cover;
