@@ -347,7 +347,7 @@ a:hover{
     display: none;
 }
 
-@media (max-width:450px){
+@media (max-width:660px){
     
     .navbar{
         /* display: flex; */
