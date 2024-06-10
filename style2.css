@@ -255,3 +255,100 @@ header{
     text-decoration: underline;
 }
 
+.bar1{
+    display: none;
+}
+
+#check2{
+    position: absolute;
+    top: -100px;
+}
+
+@media (max-width:850px){
+    .navigation{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        font-size: 35px;
+        width: 45%;
+        height: 80vh;
+        position: fixed;
+        bottom:8%;
+        padding-bottom: 50px;
+        left: -100%;
+        z-index: 0;
+        /* background-color:#009270; */
+        transition: all 0.4s ease-in-out;
+        padding-top: 120px;
+        background: rgba(50, 168, 214, 0.244);
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        
+    }
+    
+
+    .bar1  {display: block;}
+    #check2:checked ~ .navigation {left: 0;}
+
+    .wrapper{
+        position: relative;
+        width: 400px;
+        height: 440px;
+        /* background: transparent; */
+        background: rgba(50, 146, 214, 0.238);
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        backdrop-filter: blur(15px);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transition: height 0.4s ease ;
+    
+    } 
+
+    .navigation a{
+        margin: 0;
+    }
+    .navigation .button{
+        margin: 0;
+    }
+    
+    .logo{
+        position: fixed;
+        left: 35vw;
+    }
+
+    .bar1{
+        position: fixed;
+        left: 10px;
+        top: 20px;
+        color: white;
+        font-size:20px;
+    }
+
+    .wrapper h2{
+        color: #162938;
+        -webkit-text-stroke: #ffffff
+    }
+
+    
+}
+
+@media (max-width:430px){
+    .wrapper{
+        width: 89%;
+        height: 90%;
+    }
+    .remember-forget {
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 30px;
+    }
+}
