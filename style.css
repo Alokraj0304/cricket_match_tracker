@@ -251,6 +251,18 @@ a:hover{
     z-index: -1;
     backdrop-filter: blur(5px);
 }
+.content div{
+    display: flex;
+    font-size: larger;
+    line-height: 50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    text-align: center;
+    font-style: italic;
+    font-weight: 550;
+    color: rgba(0, 69, 97, 0.884);
+
+}
+
 .bgimg{
     position: fixed;
     height: 950px;
@@ -444,7 +456,8 @@ a:hover{
         margin: 0;
         z-index: 10;
     }
-    #signin{
+    
+    /* .signin{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -456,19 +469,20 @@ a:hover{
         height: 30px;
         font-size: 20px;
         background-color: #006f55b0;
-    }
+    } */
     .bgimg{
         display: none;
     }
     .box11{
         
-        height: 1400px;
+        height:1000px;
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
         /* background-color:#004434; */
         width: 41.2em;
+        padding: 0;
         /* position: fixed;
         bottom: 0; */
 
@@ -481,7 +495,7 @@ a:hover{
         align-items: center;
         justify-content: center;
         /* margin-top: 280px; */
-        margin-top: 350px;
+        margin-top: 50px;
         
     }
     
