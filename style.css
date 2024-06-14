@@ -251,17 +251,6 @@ a:hover{
     z-index: -1;
     backdrop-filter: blur(5px);
 }
-.content div{
-    display: flex;
-    font-size: larger;
-    line-height: 50px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-    text-align: center;
-    font-style: italic;
-    font-weight: 550;
-    color: rgba(0, 69, 97, 0.884);
-
-}
 
 .bgimg{
     position: fixed;
@@ -281,6 +270,18 @@ a:hover{
     margin-right: 20px;
     border-radius: 10px;
     padding: 10px;
+    font-size: 18px;
+    line-height:250%;
+    font-weight: 550;
+    z-index: 0;
+    
+}
+
+.class1{
+    position: fixed;
+    bottom: 0px;
+    z-index: 110;
+    background-color: #004434;
 }
 .box14{
     height: 10rem;
@@ -289,6 +290,9 @@ a:hover{
     border: 1.5px solid black;
     border-radius: 10px;
     padding: 10px;
+    font-size: 18px;
+    line-height:250%;
+    font-weight: 550;
 }
 .box15{
     height: 10rem;
@@ -298,6 +302,9 @@ a:hover{
     border-radius: 10px;
     padding: 10px;
     border: 1.5px solid black;
+    font-size: 18px;
+    line-height:250%;
+    font-weight: 550;
 }
 .box16{
     height: 10rem;
@@ -306,6 +313,9 @@ a:hover{
     border: 1.5px solid black;
     padding: 10px;
     border-radius: 10px;
+    font-size: 18px;
+    line-height:250%;
+    font-weight: 550;
     
 }
 .footer{
@@ -475,7 +485,7 @@ a:hover{
     }
     .box11{
         
-        height:1000px;
+        height:1400px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -495,7 +505,7 @@ a:hover{
         align-items: center;
         justify-content: center;
         /* margin-top: 280px; */
-        margin-top: 50px;
+        margin-top: 400px;
         
     }
     
@@ -522,9 +532,25 @@ a:hover{
     }
     .box20{
         margin-bottom: 150px;
+        font-size: 18px;
+        line-height:250%;
+        font-weight: 550;
     }
     .box19{
+        font-size: 18px;
+        line-height:250%;
+        font-weight: 550;
         margin-bottom: 150px;
+    }
+    .box18{
+        font-size: 18px;
+        line-height:250%;
+        font-weight: 550;
+    }
+    .box17{
+        font-size: 18px;
+        line-height:250%;
+        font-weight: 550;
     }
     .five{
         margin-left:50px;
