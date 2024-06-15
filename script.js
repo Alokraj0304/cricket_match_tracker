@@ -18,7 +18,7 @@
 // })
 
 document.addEventListener('DOMContentLoaded', function() {
-    const apiKey = '3ce525b80bmsh677deecb6dcb71bp1e9ba8jsn6fbd42ce2cc9'; 
+    const apiKey = '8fdbfb1b7amsh11feb68c1fbd024p11178djsnddb9a3c4afd2'; 
     const apiUrl = 'https://cricbuzz-cricket.p.rapidapi.com/matches/v1/recent'; 
     async function fetchScores() {
         try {
