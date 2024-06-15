@@ -18,13 +18,13 @@
 // })
 
 document.addEventListener('DOMContentLoaded', function() {
-    const apiKey = '3ce525b80bmsh677deecb6dcb71bp1e9ba8jsn6fbd42ce2cc9'; 
+    const apiKey = 'c99bf3b5fcmsh78bf7999ec5b408p19fb4bjsn76999f05c7d5'; 
     const apiUrl = 'https://cricbuzz-cricket.p.rapidapi.com/matches/v1/recent'; 
     async function fetchScores() {
         try {
             const response = await fetch(apiUrl, {
                 headers: {
-                    'x-rapidapi-key': '8fdbfb1b7amsh11feb68c1fbd024p11178djsnddb9a3c4afd2',
+                    'x-rapidapi-key': 'c99bf3b5fcmsh78bf7999ec5b408p19fb4bjsn76999f05c7d5',
 		            'x-rapidapi-host': 'cricbuzz-cricket.p.rapidapi.com'
 	
                 }
